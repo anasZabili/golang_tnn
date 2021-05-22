@@ -3,40 +3,23 @@ package main
 import "fmt"
 
 func main() {
+	// Print
+	fmt.Print("hello world")
 
-	// String
+	// Println
+	age := 22
+	name := "anas"
+	height := 1.77
+	fmt.Println("hello")
+	fmt.Println("my age is", age, "my name is", name)
 
-	var name string = "gerad"
-	var name2 = "didier"
-	var name3 string
-	fmt.Println(name, name2, name3)
+	// Printf Formated string
+	fmt.Printf("my name is %v my age is %v \n", name, age)
+	fmt.Printf("my name is %q my age is %d \n", name, age)
+	fmt.Printf("age is of type %T \n", age)
+	fmt.Printf("his height is %0.2f \n", height)
 
-	name3 = "brownie"
-	fmt.Println(name, name2, name3)
-
-	// utiliseable seulment a lal creation de variable
-	name4 := "rosie"
-
-	fmt.Println(name, name2, name3, name4)
-
-	// Int
-	var ageOne int = 22
-	var ageTwo int = ageOne + 5
-	ageThree := ageTwo + 7
-
-	fmt.Println(ageOne, ageTwo, ageThree)
-
-	// bits & memory
-
-	var numOne int8 = 25
-	var numTwo int8 = -123
-	// uint = unsigned int
-	var numThree uint8 = 255
-	fmt.Println(numOne, numTwo, numThree)
-
-	// Float
-	var scoreOne float32 = 5.3
-	var scoreTwo float64 = 56378290382309.3
-	scoreThree := 2.2
-	fmt.Println(scoreOne, scoreTwo, scoreThree)
+	// SprintF
+	description := fmt.Sprintf("my age is %v and my name is %v", age, name)
+	fmt.Printf("%v", description)
 }
